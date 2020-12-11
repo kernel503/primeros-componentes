@@ -77,9 +77,9 @@ class ShowAnimal extends React.Component {
       const message = `An error has occured: ${response.status}`
       throw new Error(message)
     }
-    const data = await response.json()
-    console.log(data)
+    const data = await response.json()    
     const { url } = data
+    console.log(data)
     this.setState({ imageURL: url, alt: 'Se ha cargado un perro' })
     this.setState({ loading: false })
   }
