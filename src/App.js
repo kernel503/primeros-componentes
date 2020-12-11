@@ -144,5 +144,5 @@ class Header extends React.Component {
   }
 }
 
-
+//Console Hidden
 export {Header, ShowAnimal};
