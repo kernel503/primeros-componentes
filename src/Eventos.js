@@ -132,31 +132,31 @@ class App extends Component {
     //alert("hi")
   }
 
-render() {
-  return (
-    <div>
-      <div className="select is-multiple mt-5">
-        <select multiple size="5" value={this.state.countrySelected} onChange={this.multipleSelect} onMouseDown={this.notDelete}>
-          <option value="Argentina">Argentina</option>
-          <option value="Bolivia">Bolivia</option>
-          <option value="Brazil">Brazil</option>
-          <option value="Chile">Chile</option>
-          <option value="Colombia">Colombia</option>
-          <option value="Ecuador">Ecuador</option>
-          <option value="Guyana">Guyana</option>
-          <option value="Paraguay">Paraguay</option>
-          <option value="Peru">Peru</option>
-          <option value="Suriname">Suriname</option>
-          <option value="Uruguay">Uruguay</option>
-          <option value="Venezuela">Venezuela</option>
-        </select>
+  render() {
+    return (
+      <div>
+        <div className="select is-multiple mt-5">
+          <select multiple size="5" value={this.state.countrySelected} onChange={this.multipleSelect} onMouseDown={this.notDelete}>
+            <option value="Argentina">Argentina</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Guyana">Guyana</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Peru">Peru</option>
+            <option value="Suriname">Suriname</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </div>
+        <div className="mt-5">
+          {this.state.countrySelected.join(', ')}
+        </div>
       </div>
-      <div className="mt-5">
-        {this.state.countrySelected.join(', ')}
-      </div>
-    </div>
-  )
-}
+    )
+  }
 }
 
 
