@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
-
 /*
 
 const App = () => {
@@ -21,10 +19,6 @@ class App extends Component {
   }
 }
 
-*/
-
-
-/*
 class Eventos extends Component {
   // eslint-disable-next-line no-useless-constructor
   constructor(props) {
