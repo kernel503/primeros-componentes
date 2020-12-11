@@ -116,47 +116,47 @@ class App extends Component {
     })
   }
 
-  multipleSelect = (e) => {    
+  multipleSelect = (e) => {
     console.log(e.target.selectedOptions, e.target, e.target.options)
     let selected = []
-    for (e of e.target.selectedOptions){
+    for (e of e.target.selectedOptions) {
       console.log(e.value)
       selected.push(e.value)
     }
     //this.setState({countrySelected:[...e.target.selectedOptions].map(e => e.value)})
-    this.setState({countrySelected: selected})
+    this.setState({ countrySelected: selected })
   }
 
-  notDelete = (e) =>{
+  notDelete = (e) => {
     //e.preventDefault()
     //alert("hi")
   }
 
-  render() {
-    return (
-      <div>
-        <div className="select is-multiple mt-5">
-          <select multiple size="5" value={this.state.countrySelected}  onChange={this.multipleSelect} onMouseDown={ this.notDelete }>
-            <option value="Argentina">Argentina</option>
-            <option value="Bolivia">Bolivia</option>
-            <option value="Brazil">Brazil</option>
-            <option value="Chile">Chile</option>
-            <option value="Colombia">Colombia</option>
-            <option value="Ecuador">Ecuador</option>
-            <option value="Guyana">Guyana</option>
-            <option value="Paraguay">Paraguay</option>
-            <option value="Peru">Peru</option>
-            <option value="Suriname">Suriname</option>
-            <option value="Uruguay">Uruguay</option>
-            <option value="Venezuela">Venezuela</option>
-          </select>
-        </div>
-        <div className="mt-5">
-          {this.state.countrySelected.join(', ')}
-        </div>
+render() {
+  return (
+    <div>
+      <div className="select is-multiple mt-5">
+        <select multiple size="5" value={this.state.countrySelected} onChange={this.multipleSelect} onMouseDown={this.notDelete}>
+          <option value="Argentina">Argentina</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Guyana">Guyana</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Peru">Peru</option>
+          <option value="Suriname">Suriname</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Venezuela">Venezuela</option>
+        </select>
       </div>
-    )
-  }
+      <div className="mt-5">
+        {this.state.countrySelected.join(', ')}
+      </div>
+    </div>
+  )
+}
 }
 
 

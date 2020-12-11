@@ -2,24 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bulma/css/bulma.css'
-import Header from './App';
-import { Eventos, App } from './Eventos'
+// eslint-disable-next-line
+import { Header, ShowAnimal } from './App';
+import { Eventos, App} from './Eventos'
 import reportWebVitals from './reportWebVitals';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Eventos />
+    <ShowAnimal />
   </React.StrictMode>,
   document.getElementById('root')
-);
-
-ReactDOM.render(
-  <React.StrictMode>      
-    <App/>
-  </React.StrictMode>,
-  document.getElementById('root2')
 );
 
 
