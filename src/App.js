@@ -7,12 +7,11 @@ class TechList extends React.Component {
     super(props)
   }
   render() {
-    const techs = ['HTML', 'CSS', 'JavaScript', '😀','😁']
+    const techs = ['HTML', 'CSS', 'JavaScript', '😀', '😁', '🤡']
     const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
     return techsFormatted
   }
 }
-
 
 /*
 Si utilizo los componentes basado en clase solo pueden ir metodos y variables sin definir
@@ -73,11 +72,11 @@ class ShowAnimal extends React.Component {
   searchDog = async () => {
     this.setState({ loading: true })
     const response = await fetch('https://random.dog/woof.json')
-    if (!response.ok) { 
+    if (!response.ok) {
       const message = `An error has occured: ${response.status}`
       throw new Error(message)
     }
-    const data = await response.json()    
+    const data = await response.json()
     const { url } = data
     console.log(data)
     this.setState({ imageURL: url, alt: 'Se ha cargado un perro' })
@@ -145,4 +144,4 @@ class Header extends React.Component {
 }
 
 //Console Hidden
-export {Header, ShowAnimal};
+export { Header, ShowAnimal };
