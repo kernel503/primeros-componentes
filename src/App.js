@@ -38,7 +38,6 @@ class Welcome extends React.Component {
     console.log('Datos pasados', this.props)
   }
 
-
   render() {
     const { name } = this.props
     const { stringChange, count } = this.state
