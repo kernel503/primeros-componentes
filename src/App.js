@@ -114,7 +114,6 @@ class ShowAnimal extends React.Component {
 
 }
 
-
 // class base component
 class Header extends React.Component {
   // the code inside the constructor run before any other code
@@ -142,5 +141,4 @@ class Header extends React.Component {
   }
 }
 
-//Console Hidden
 export { Header, ShowAnimal };

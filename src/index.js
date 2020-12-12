@@ -7,15 +7,12 @@ import { Header, ShowAnimal } from './App';
 import { Eventos, App} from './Eventos'
 import reportWebVitals from './reportWebVitals';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <ShowAnimal />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
 
 /*
 ReactDOM.render(
