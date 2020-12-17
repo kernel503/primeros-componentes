@@ -153,7 +153,6 @@ class App extends Component {
   }
 }
 
-
 /*
           <select multiple size="5" onChange={(e) => this.multipleSelect(e)}>
 
@@ -196,7 +195,6 @@ class App extends Component {
             <input type='submit' value='Submit' />
           </div>
         </form>
-
 
 */
 

@@ -116,7 +116,6 @@ class ShowAnimal extends React.Component {
 
 // class base component
 class Header extends React.Component {
-  // the code inside the constructor run before any other code
   // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props)

@@ -79,6 +79,7 @@ class AppCondicional extends Component {
     console.log(texto.nombre)
     console.log(e.target.innerHTML, e.target)
     this.setState({ loggedIn: !this.state.loggedIn })
+    console.log('');
   }
 
   render() {
